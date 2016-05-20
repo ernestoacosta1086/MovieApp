@@ -1,0 +1,34 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/pref_value_by_rating_desc"
+        android:entries="@array/pref_label_options"
+        android:entryValues="@array/pref_order_values"
+        android:key="@string/pref_key_order"
+        android:title="@string/pref_title_order" />
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_value_year"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:key="@string/pref_key_year"
+        android:maxLength="4"
+        android:numeric="integer"
+        android:title="@string/pref_title_year" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_label_values_votes_200"
+        android:entries="@array/pref_label_value_votes"
+        android:entryValues="@array/pref_label_value_votes"
+        android:key="@string/pref_key_votes"
+        android:title="@string/pref_title_votes" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_label_values_rating_2"
+        android:entries="@array/pref_label_value_rating"
+        android:entryValues="@array/pref_label_value_rating"
+        android:key="@string/pref_key_rating"
+        android:title="@string/pref_title_rating" />
+
+
+</PreferenceScreen>

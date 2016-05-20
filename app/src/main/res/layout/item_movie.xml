@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="1dp"
+    android:id="@+id/cardview_poster">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/poster_picture"
+            android:layout_width="194dp"
+            android:layout_height="276dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_poster" />
+
+        <RatingBar
+            android:id="@+id/rating_poster"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:numStars="10"
+            android:paddingLeft="6dp"
+            android:stepSize="0.1" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
